@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Management System - Login</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+
+    <!-- =========================
+         LOGIN CONTAINER
+    ========================== -->
+    <div class="container">
+
+        <!-- Login Card -->
+        <div class="login-box">
+
+            <!-- School Logo -->
+            <img src="images/logo.jfif" alt="School Logo" class="logo">
+
+            <!-- Heading -->
+            <h1>Student Management System</h1>
+
+            <!-- Welcome Message -->
+            <p class="welcome">
+                Welcome! Please login with your username and password.
+            </p>
+
+            <!-- Login Form -->
+            <form id="loginForm">
+
+                <!-- Username -->
+                <div class="form-group">
+                    <label for="username">
+                        Username
+                    </label>
+
+                    <input
+                        type="text"
+                        id="username"
+                        placeholder="Enter Username"
+                    >
+                </div>
+
+                <!-- Password -->
+                <div class="form-group">
+
+                    <label for="password">
+                        Password
+                    </label>
+
+                    <input
+                        type="password"
+                        id="password"
+                        placeholder="Enter Password"
+                    >
+
+                </div>
+
+                <!-- Show Password -->
+                <div class="checkbox">
+
+                    <input
+                        type="checkbox"
+                        id="showPassword"
+                    >
+
+                    <label for="showPassword">
+                        Show Password
+                    </label>
+
+                </div>
+
+                <!-- Buttons -->
+                <div class="buttons">
+
+                    <button
+                        type="button"
+                        id="loginBtn"
+                    >
+                        Login
+                    </button>
+
+                    <button
+                        type="reset"
+                        id="resetBtn"
+                    >
+                        Reset
+                    </button>
+
+                </div>
+
+            </form>
+
+            <!-- Message Area -->
+            <div id="message"></div>
+
+        </div>
+
+    </div>
+
+    <!-- JavaScript -->
+    <script src="js/login.js"></script>
+
+</body>
+</html>

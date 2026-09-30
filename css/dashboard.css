@@ -1,0 +1,322 @@
+/* ======================================
+   GENERAL STYLING
+====================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f4f6f9;
+    color:#333;
+    line-height:1.6;
+}
+
+/* ======================================
+   HEADER
+====================================== */
+
+header{
+    background:#0077ff;
+    color:#fff;
+    padding:20px;
+    text-align:center;
+}
+
+/* ======================================
+   NAVIGATION
+====================================== */
+
+nav{
+    background:#005fcc;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-wrap:wrap;
+}
+
+nav ul li{
+    margin:0;
+}
+
+nav ul li a,
+#logoutBtn{
+    display:block;
+    padding:15px 20px;
+    color:#fff;
+    text-decoration:none;
+    border:none;
+    background:none;
+    cursor:pointer;
+    font-size:16px;
+    transition:.3s;
+}
+
+nav ul li a:hover,
+#logoutBtn:hover{
+    background:#004a9f;
+}
+
+/* ======================================
+   MAIN CONTAINER
+====================================== */
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:30px auto;
+}
+
+/* ======================================
+   FORM SECTION
+====================================== */
+
+.form-section{
+    background:#fff;
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+    margin-bottom:30px;
+}
+
+.form-section h2{
+    margin-bottom:20px;
+    color:#0077ff;
+}
+
+.form-group{
+    margin-bottom:18px;
+}
+
+.form-group label{
+    display:block;
+    margin-bottom:8px;
+    font-weight:bold;
+}
+
+.form-group input,
+.form-group select{
+    width:100%;
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:6px;
+    font-size:15px;
+}
+
+.form-group input:focus,
+.form-group select:focus{
+    outline:none;
+    border-color:#0077ff;
+}
+
+.gender{
+    display:flex;
+    gap:20px;
+}
+
+.gender label{
+    font-weight:normal;
+}
+
+/* ======================================
+   BUTTONS
+====================================== */
+
+.buttons{
+    display:flex;
+    gap:10px;
+    margin-top:20px;
+}
+
+.buttons button{
+    flex:1;
+    padding:12px;
+    border:none;
+    border-radius:6px;
+    cursor:pointer;
+    font-size:16px;
+    transition:.3s;
+}
+
+#addStudentBtn{
+    background:#28a745;
+    color:#fff;
+}
+
+#addStudentBtn:hover{
+    background:#218838;
+}
+
+#resetFormBtn{
+    background:#dc3545;
+    color:#fff;
+}
+
+#resetFormBtn:hover{
+    background:#bb2d3b;
+}
+
+/* ======================================
+   MESSAGE
+====================================== */
+
+#formMessage{
+    margin-bottom:15px;
+    font-weight:bold;
+    min-height:24px;
+}
+
+.success{
+    color:green;
+}
+
+.error{
+    color:red;
+}
+
+/* ======================================
+   SEARCH BOX
+====================================== */
+
+.search-section{
+    margin-bottom:20px;
+}
+
+#search{
+    width:100%;
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:6px;
+    font-size:15px;
+}
+
+#search:focus{
+    outline:none;
+    border-color:#0077ff;
+}
+
+/* ======================================
+   COUNTER
+====================================== */
+
+.counter{
+    margin-bottom:20px;
+    font-size:18px;
+    font-weight:bold;
+}
+
+/* ======================================
+   TABLE
+====================================== */
+
+.table-section{
+    overflow-x:auto;
+    background:#fff;
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+thead{
+    background:#0077ff;
+    color:#fff;
+}
+
+th,
+td{
+    padding:12px;
+    border:1px solid #ddd;
+    text-align:center;
+}
+
+tbody tr:nth-child(even){
+    background:#f8f8f8;
+}
+
+tbody tr:hover{
+    background:#eaf3ff;
+}
+
+/* ======================================
+   DELETE BUTTON
+====================================== */
+
+.deleteBtn{
+    background:#dc3545;
+    color:#fff;
+    border:none;
+    padding:8px 12px;
+    border-radius:5px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.deleteBtn:hover{
+    background:#bb2d3b;
+}
+
+/* ======================================
+   FOOTER
+====================================== */
+
+footer{
+    margin-top:40px;
+    background:#0077ff;
+    color:#fff;
+    text-align:center;
+    padding:15px;
+}
+
+/* ======================================
+   RESPONSIVE DESIGN
+====================================== */
+
+@media(max-width:768px){
+
+    nav ul{
+        flex-direction:column;
+    }
+
+    .buttons{
+        flex-direction:column;
+    }
+
+    .gender{
+        flex-direction:column;
+        gap:10px;
+    }
+
+    th,
+    td{
+        font-size:14px;
+        padding:10px;
+    }
+
+}
+
+@media(max-width:500px){
+
+    .container{
+        width:95%;
+    }
+
+    header h1{
+        font-size:24px;
+    }
+
+    .form-section{
+        padding:20px;
+    }
+
+}
